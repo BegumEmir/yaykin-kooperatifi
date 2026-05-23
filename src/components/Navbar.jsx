@@ -12,7 +12,7 @@ export default function Navbar() {
 
         {/* Logo / İsim */}
         <Link to="/" className="text-white font-semibold text-sm md:text-base">
-          S.S. Kocayayla Köyü Tarımsal Kalkınma Kooperatifi
+          S.S. Yaykın Köyü Tarımsal Kalkınma Kooperatifi
         </Link>
 
         {/* Desktop Menü */}

@@ -1,8 +1,8 @@
-# S.S. Kocayayla Köyü Tarımsal Kalkınma Kooperatifi — Web Sitesi v2
+# S.S. Yaykın Köyü Tarımsal Kalkınma Kooperatifi — Web Sitesi v2
 
-Çanakkale ili Çan ilçesine bağlı Kocayayla Köyü Tarımsal Kalkınma Kooperatifi'nin resmi web sitesidir.
+Çanakkale ili Çan ilçesine bağlı Yaykın Köyü Tarımsal Kalkınma Kooperatifi'nin resmi web sitesidir.
 
-🌐 **Canlı Site:** [kocayaylakooperatifi.org](https://kocayaylakooperatifi.org)
+🌐 **Canlı Site:** [yaykinkooperatifi.org](https://yaykinkooperatifi.org)
 
 ---
 
@@ -60,15 +60,15 @@ V2 yaklaşık 2 günde tamamlanmış olup domain de bu siteye taşınmıştır.
 | Medya depolama | GitHub reposu | Sanity CDN |
 | Build aracı | — | Vite |
 
-🔗 V1 reposuna ulaşmak için: [kocayayla-kooperatif](https://github.com/BegumEmir/kocayayla-kooperatif)
+🔗 V1 reposuna ulaşmak için: [yaykın-kooperatif](https://github.com/BegumEmir/yaykın-kooperatif)
 
 ---
 
 ## Kurulum
 
 ```bash
-git clone https://github.com/BegumEmir/kocayayla-v2.git
-cd kocayayla-v2
+git clone https://github.com/BegumEmir/yaykın-v2.git
+cd yaykın-v2
 npm install
 ```
 

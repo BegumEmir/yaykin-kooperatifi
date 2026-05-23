@@ -1,14 +1,6 @@
 import { useEffect, useState } from 'react'
 import { client } from '../sanityClient'
 
-const eskiBaskanlar = [
-  { ad: 'Hasan Ünlü' },
-  { ad: 'Metin Kızıltepe' },
-  { ad: 'Vayit Tüzgen', merhum: true },
-  { ad: 'Osman Deniz' },
-  { ad: 'Ömer Zözer' },
-]
-
 export default function Baskanlar() {
   const [baskan, setBaskan] = useState(null)
 
@@ -56,25 +48,6 @@ export default function Baskanlar() {
           </div>
         </div>
       )}
-
-      {/* Görev Yapmış Başkanlar */}
-      <div>
-        <h2 className="text-xl font-semibold mb-4" style={{ color: 'var(--color-primary)' }}>
-          Görev Yapmış Başkanlarımız
-        </h2>
-        <div className="bg-white rounded-2xl shadow-sm p-8">
-          <div className="flex flex-col divide-y divide-gray-100">
-            {eskiBaskanlar.map((b) => (
-              <div key={b.ad} className="py-3 flex items-center gap-2">
-                <span className="font-medium text-gray-700">{b.ad}</span>
-                {b.merhum && (
-                  <span className="text-xs text-gray-400 italic">(Merhum)</span>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

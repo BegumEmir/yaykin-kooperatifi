@@ -8,11 +8,11 @@ export default function Ortaklarimiz() {
       {/* İstatistikler */}
       <div className="grid grid-cols-2 gap-6 mb-8">
         <div className="bg-white rounded-2xl shadow-sm p-8 text-center">
-          <p className="text-5xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>179</p>
+          <p className="text-5xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>107</p>
           <p className="text-gray-500">Ortak</p>
         </div>
         <div className="bg-white rounded-2xl shadow-sm p-8 text-center">
-          <p className="text-5xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>78</p>
+          <p className="text-5xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>50</p>
           <p className="text-gray-500">Aktif Ortak</p>
         </div>
       </div>
@@ -20,7 +20,7 @@ export default function Ortaklarimiz() {
       {/* Açıklama */}
       <div className="bg-white rounded-2xl shadow-sm p-8 mb-8">
         <p className="text-gray-600 leading-relaxed mb-4">
-          Kooperatifimiz, Kocayayla Köyü'nde tarım ve hayvancılıkla uğraşan üreticilerin gönüllü katılımıyla faaliyet göstermektedir. Bugün kooperatifimizin bünyesinde <strong>179 ortağımız</strong> bulunmakta olup bunlardan <strong>78 tanesi aktif olarak</strong> faaliyetlerine devam etmektedir.
+          Kooperatifimiz, Yaykın Köyü'nde tarım ve hayvancılıkla uğraşan üreticilerin gönüllü katılımıyla faaliyet göstermektedir. Bugün kooperatifimizin bünyesinde <strong>179 ortağımız</strong> bulunmakta olup bunlardan <strong>78 tanesi aktif olarak</strong> faaliyetlerine devam etmektedir.
         </p>
         <p className="text-gray-600 leading-relaxed">
           Ortaklarımız, kooperatifimizin sunduğu hizmetlerden eşit ve adil şekilde yararlanmakta; üretim, tedarik ve hizmet süreçlerine katılım sağlayarak kooperatifimizin gelişimine katkıda bulunmaktadır. Üretici gücünü birleştiren bu yapı sayesinde hem bireysel hem de toplu fayda hedeflenmektedir.

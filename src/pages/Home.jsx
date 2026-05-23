@@ -31,8 +31,8 @@ export default function Home() {
               Kooperatifimize Hoş Geldiniz
             </h1>
             <p className="text-gray-600 mb-2">
-              S.S. Kocayayla Köyü Tarımsal Kalkınma Kooperatifi, Çanakkale ili Çan ilçesine bağlı
-              Kocayayla Köyü'nde faaliyet gösteren bir tarım kooperatifidir.
+              S.S. Yaykın Köyü Tarımsal Kalkınma Kooperatifi, Çanakkale ili Çan ilçesine bağlı
+              Yaykın Köyü'nde faaliyet gösteren bir tarım kooperatifidir.
             </p>
             <p className="text-gray-600 mb-6">
               Köyümüzün doğal üretim gücünü bir araya getirerek dayanışmayı ve tarımsal kalkınmayı esas alıyoruz.
@@ -40,13 +40,13 @@ export default function Home() {
             <div className="flex gap-8 mb-6">
               <div>
                 <span className="text-3xl font-bold" style={{ color: 'var(--color-primary)' }}>
-                  {ayarlar?.ortakSayisi ?? 179}
+                  {ayarlar?.ortakSayisi ?? 107}
                 </span>
                 <p className="text-sm text-gray-500">Ortak</p>
               </div>
               <div>
                 <span className="text-3xl font-bold" style={{ color: 'var(--color-primary)' }}>
-                  {ayarlar?.aktifOrtakSayisi ?? 78}
+                  {ayarlar?.aktifOrtakSayisi ?? 50}
                 </span>
                 <p className="text-sm text-gray-500">Aktif Ortak</p>
               </div>
@@ -75,7 +75,7 @@ export default function Home() {
       {/* ALINTI */}
       <section className="max-w-5xl mx-auto px-6 mb-12">
         <blockquote className="border-l-4 pl-5 py-1 text-gray-700 font-medium italic" style={{ borderColor: 'var(--color-primary)' }}>
-          İlçemizin en büyük köylerinden biri olan Kocayayla, aynı zamanda ilçede en yüksek süt üretiminin gerçekleştirildiği yerleşim yeridir.
+          İlçemizin en büyük köylerinden biri olan Yaykın, aynı zamanda ilçede en yüksek süt üretiminin gerçekleştirildiği yerleşim yeridir.
         </blockquote>
       </section>
 

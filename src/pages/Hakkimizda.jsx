@@ -13,10 +13,10 @@ export default function Hakkimizda() {
       {/* Ana Metin + Fotoğraf */}
       <div className="bg-white rounded-2xl shadow-sm p-10 flex flex-col md:flex-row gap-10 mb-8">
         <div className="flex-1 flex flex-col gap-4 text-gray-600 leading-relaxed">
-          <p>S.S. Kocayayla Köyü Tarımsal Kalkınma Kooperatifi, Kocayayla Köyü'nde tarım ve hayvancılıkla uğraşan üreticilerin ekonomik ve sosyal olarak güçlenmesini sağlamak amacıyla kurulmuştur. Kooperatifimiz, ortaklarımızın üretim faaliyetlerini desteklemek, maliyetlerini azaltmak ve sürdürülebilir bir üretim yapısı oluşturmak hedefiyle faaliyetlerini sürdürmektedir.</p>
-          <p>Kooperatifimiz, 2004 yılında 7 üreticimizin bir araya gelmesiyle kurulmuştur. Kuruluşumuzda emeği geçen kurucu ortaklarımız; Hüsrev Damar, Hasan Ünlü, Osman Özmen, Reyhan Uysal, İbrahim Öz, Yakup Alkan ve Metin Kızıltepe'dir.</p>
+          <p>S.S. Yaykın Köyü Tarımsal Kalkınma Kooperatifi, Yaykın Köyü'nde tarım ve hayvancılıkla uğraşan üreticilerin ekonomik ve sosyal olarak güçlenmesini sağlamak amacıyla kurulmuştur. Kooperatifimiz, ortaklarımızın üretim faaliyetlerini desteklemek, maliyetlerini azaltmak ve sürdürülebilir bir üretim yapısı oluşturmak hedefiyle faaliyetlerini sürdürmektedir.</p>
+          <p>Kooperatifimiz, 1986 yılında kurulmuştur. </p>
           <p>Kuruluşumuzdan bu yana, dayanışma ve ortaklık anlayışıyla hareket ederek üyelerimizin ihtiyaçlarını karşılamaya yönelik hizmetler sunmaktayız. Süt toplama ve soğutma, yem ve un temini, tarımsal makine hizmetleri gibi alanlarda sağladığımız desteklerle üreticilerimizin yanında olmaya devam ediyoruz.</p>
-          <p>Kooperatifimizde 2004 yılından bu yana görev yapan başkanlarımız sırasıyla Hasan Ünlü, Metin Kızıltepe, Vayit Tüzgen (Merhum), Osman Deniz, Ömer Zözer ve İsa Özmen olmuştur. Bugüne kadar görev alan tüm başkanlarımıza ve yöneticilerimize kooperatifimize sundukları katkılardan dolayı teşekkür ediyor, merhum başkanımızı rahmetle anıyoruz.</p>
+          <p>Bugüne kadar görev alan tüm başkanlarımıza ve yöneticilerimize kooperatifimize sundukları katkılardan dolayı teşekkür ediyoruz.</p>
           <p>Kooperatifimiz, yerel üretimi destekleyen, güvenilir ve şeffaf bir yönetim anlayışını benimsemektedir. Ortaklarımızın emeğinin değer bulması, üretimin sürdürülebilir hale gelmesi ve kırsal kalkınmaya katkı sağlanması temel önceliklerimiz arasındadır. Bugün olduğu gibi gelecekte de, üyelerimizle birlikte büyüyen, gelişen ve bölge ekonomisine katkı sunan bir kooperatif olma hedefiyle çalışmalarımızı sürdürmekteyiz.</p>
         </div>
         <div className="flex-shrink-0">
@@ -27,8 +27,8 @@ export default function Hakkimizda() {
       {/* Misyon / Vizyon */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         {[
-          { baslik: 'Misyonumuz', icerik: "Köylümüzün ürettiği ürünlerin katma değerini artırmak, üreticilerimize eğitim ve teknik destek sağlamak, doğal ve sağlıklı üretimi teşvik ederek Kocayayla'nın tarımsal potansiyelini en üst seviyeye taşımak." },
-          { baslik: 'Vizyonumuz', icerik: "Kocayayla'yı bölgesinin öncü tarımsal üretim merkezlerinden biri haline getirmek ve güvenilir, kaliteli üretim anlayışıyla Türkiye'de örnek gösterilen bir kooperatif olmak." },
+          { baslik: 'Misyonumuz', icerik: "Köylümüzün ürettiği ürünlerin katma değerini artırmak, üreticilerimize eğitim ve teknik destek sağlamak, doğal ve sağlıklı üretimi teşvik ederek Yaykın'nın tarımsal potansiyelini en üst seviyeye taşımak." },
+          { baslik: 'Vizyonumuz', icerik: "Yaykın'yı bölgesinin öncü tarımsal üretim merkezlerinden biri haline getirmek ve güvenilir, kaliteli üretim anlayışıyla Türkiye'de örnek gösterilen bir kooperatif olmak." },
         ].map((item) => (
           <div key={item.baslik} className="bg-white rounded-2xl shadow-sm p-6 border-t-4" style={{ borderColor: 'var(--color-primary)' }}>
             <h3 className="font-bold text-lg mb-3" style={{ color: 'var(--color-primary-dark)' }}>{item.baslik}</h3>
@@ -92,7 +92,7 @@ export default function Hakkimizda() {
       <div className="rounded-2xl p-10 text-center text-white" style={{ backgroundColor: 'var(--color-primary)' }}>
         <h3 className="text-2xl font-bold mb-4">Birlikte Güçlüyüz</h3>
         <p className="leading-relaxed max-w-2xl mx-auto">
-          Kocayayla Köyü'nün geleceğini, toprağına sahip çıkan üreticilerimizle birlikte şekillendiriyoruz.
+          Yaykın Köyü'nün geleceğini, toprağına sahip çıkan üreticilerimizle birlikte şekillendiriyoruz.
           Kooperatifimize dair daha fazla bilgi almak, ortaklık süreçleri hakkında detay öğrenmek veya
           iş birliği teklifinde bulunmak için bizimle her zaman iletişime geçebilirsiniz.
         </p>

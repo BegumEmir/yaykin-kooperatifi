@@ -7,13 +7,13 @@ export default function Footer() {
 
         {/* Sol — Kooperatif Bilgisi */}
         <div>
-          <h3 className="font-bold text-lg mb-3">Kocayayla Tarımsal Kalkınma Kooperatifi</h3>
+          <h3 className="font-bold text-lg mb-3">Yaykın Tarımsal Kalkınma Kooperatifi</h3>
           <p className="text-green-200 text-sm mb-4">
             Doğal üretim, dayanışma ve köyümüzün kalkınması için hizmet veriyoruz.
           </p>
-          <p className="text-sm text-green-100">📍 Kocayayla Köyü, Çan / Çanakkale</p>
+          <p className="text-sm text-green-100">📍 Yaykın Köyü, Çan / Çanakkale</p>
           <p className="text-sm text-green-100 mt-1">☎ 0 (554) 495 74 86</p>
-          <p className="text-sm text-green-100 mt-1">✉ kocayaylakooperatifi@gmail.com</p>
+          <p className="text-sm text-green-100 mt-1">✉ yaykinkooperatifi@gmail.com</p>
         </div>
 
         {/* Orta — Hızlı Erişim */}
@@ -48,7 +48,7 @@ export default function Footer() {
           <iframe
             title="Konum"
             className="w-full h-40 rounded-xl"
-            src="https://maps.google.com/maps?q=Kocayayla+Köyü,+Çan,+Çanakkale&output=embed"
+            src="https://maps.google.com/maps?q=Yaykin+Köyü,+Çan,+Çanakkale&output=embed"
             allowFullScreen
           />
         </div>
@@ -57,7 +57,7 @@ export default function Footer() {
 
       {/* Alt bar */}
       <div className="border-t border-green-800 text-center py-4 text-sm text-green-300">
-        © {new Date().getFullYear()} Kocayayla Kooperatifi – Tüm Hakları Saklıdır.
+        © {new Date().getFullYear()} Yaykın Kooperatifi – Tüm Hakları Saklıdır.
       </div>
     </footer>
   )

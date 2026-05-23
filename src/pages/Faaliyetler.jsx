@@ -26,8 +26,8 @@ export default function Faaliyetler() {
     },
     {
       emoji: '🚜',
-      baslik: 'Tarımsal Makine ve Kepçe Hizmetleri',
-      icerik: 'Kooperatifimizin sahip olduğu traktör, kepçe ve beko loder ile üyelerimizin tarımsal faaliyetlerinde ihtiyaç duydukları makine hizmetleri karşılanmaktadır.',
+      baslik: 'Tarımsal Makine Hizmetleri',
+      icerik: 'Kooperatifimizin sahip olduğu tarımsal makineler ile üyelerimizin tarımsal faaliyetlerinde ihtiyaç duydukları makine hizmetleri karşılanmaktadır.',
       foto: '/galeri/kepçe.jpeg',
     },
     {
