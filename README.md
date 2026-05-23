@@ -1,4 +1,4 @@
-# S.S. Yaykın Köyü Tarımsal Kalkınma Kooperatifi — Web Sitesi v2
+# S.S. Yaykın Köyü Tarımsal Kalkınma Kooperatifi — Web Sitesi
 
 Çanakkale ili Çan ilçesine bağlı Yaykın Köyü Tarımsal Kalkınma Kooperatifi'nin resmi web sitesidir.
 
@@ -8,9 +8,7 @@
 
 ## Hakkında
 
-Bu proje, daha önce yayında olan v1 sitesinin yeniden yazılmış halidir. V1 siteyi de ben geliştirmiştim; ancak fotoğraf ve videolar doğrudan repoda tutulduğundan yer kaplamaya başlamıştı. İçerik yönetimi de kod bilgisi gerektiriyordu. Bu sorunları çözmek ve siteyi daha sürdürülebilir hale getirmek amacıyla v2'yi geliştirdim.
-
-V2 yaklaşık 2 günde tamamlanmış olup domain de bu siteye taşınmıştır.
+Bu proje, Yaykın Köyü Tarımsal Kalkınma Kooperatifi için geliştirilmiş resmi web sitesidir. İçerik yönetimi kod bilgisi gerektirmeden Sanity CMS üzerinden yapılabilmektedir.
 
 ---
 
@@ -18,7 +16,7 @@ V2 yaklaşık 2 günde tamamlanmış olup domain de bu siteye taşınmıştır.
 
 - **React** — Kullanıcı arayüzü
 - **Vite** — Build aracı
-- **Tailwind CSS** — Stillendirme (v1'de saf CSS kullanılmıştı)
+- **Tailwind CSS** — Stillendirme
 - **Sanity CMS** — İçerik yönetim sistemi
 - **React Router** — Sayfa yönlendirme
 - **Netlify** — Deploy ve hosting
@@ -51,24 +49,11 @@ V2 yaklaşık 2 günde tamamlanmış olup domain de bu siteye taşınmıştır.
 
 ---
 
-## V1 ile Karşılaştırma
-
-| | V1 | V2 |
-|---|---|---|
-| Stil | Saf CSS | Tailwind CSS |
-| İçerik yönetimi | Kod ile | Sanity CMS |
-| Medya depolama | GitHub reposu | Sanity CDN |
-| Build aracı | — | Vite |
-
-🔗 V1 reposuna ulaşmak için: [yaykın-kooperatif](https://github.com/BegumEmir/yaykın-kooperatif)
-
----
-
 ## Kurulum
 
 ```bash
-git clone https://github.com/BegumEmir/yaykın-v2.git
-cd yaykın-v2
+git clone https://github.com/BegumEmir/yaykin-kooperatifi.git
+cd yaykin-kooperatifi
 npm install
 ```
 
@@ -82,12 +67,3 @@ VITE_SANITY_DATASET=production
 ```bash
 npm run dev
 ```
-
----
-
-## Öğrendiklerim / Zorluklar
-
-- Sanity CMS'i ilk kez bir projede entegre ettim; içerik şemaları oluşturmayı, GROQ sorguları yazmayı ve görsel URL'lerini yönetmeyi öğrendim
-- Git submodule sorunuyla karşılaştım ve terminalden çözdüm
-- React Router ile SPA'da Netlify 404 sorununu `netlify.toml` ile çözdüm
-- Sanity CORS ayarlarını hem geliştirme hem production ortamı için yapılandırdım
