@@ -1,4 +1,13 @@
+import { useEffect, useState } from 'react'
+import { client } from '../sanityClient'
+
 export default function Iletisim() {
+  const [ayarlar, setAyarlar] = useState(null)
+
+  useEffect(() => {
+    client.fetch('*[_type == "ayarlar"][0]').then(setAyarlar)
+  }, [])
+
   return (
     <div className="max-w-4xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-bold mb-8" style={{ color: 'var(--color-primary-dark)' }}>
@@ -13,18 +22,26 @@ export default function Iletisim() {
           <div className="flex flex-col gap-4 text-gray-600">
             <div>
               <p className="font-medium text-sm text-gray-400 mb-1">Adres</p>
-              <p>Yaykın Köyü, Çan / Çanakkale</p>
+              <p>{ayarlar?.adres || 'Yaykın Köyü, Çan / Çanakkale'}</p>
             </div>
             <div>
               <p className="font-medium text-sm text-gray-400 mb-1">Telefon</p>
-              <a href="tel:05544957486" className="hover:underline" style={{ color: 'var(--color-primary)' }}>
-                0 (***) *** ** **
+              <a
+                href={`tel:${ayarlar?.telefon || ''}`}
+                className="hover:underline"
+                style={{ color: 'var(--color-primary)' }}
+              >
+                {ayarlar?.telefon || '-'}
               </a>
             </div>
             <div>
               <p className="font-medium text-sm text-gray-400 mb-1">E-posta</p>
-              <a href="mailto:yaykınkooperatifi@gmail.com" className="hover:underline" style={{ color: 'var(--color-primary)' }}>
-                yaykinkooperatifi@gmail.com
+              <a
+                href={`mailto:${ayarlar?.eposta || ''}`}
+                className="hover:underline"
+                style={{ color: 'var(--color-primary)' }}
+              >
+                {ayarlar?.eposta || '-'}
               </a>
             </div>
           </div>

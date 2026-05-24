@@ -28,7 +28,7 @@ export default function Duyurular() {
                 <div>
                   <p className="font-semibold" style={{ color: 'var(--color-primary-dark)' }}>{d.baslik}</p>
                   <p className="text-sm text-gray-400">
-                    {new Date(d.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
+                    {d.tarih ? new Date(d.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : ''}
                   </p>
                 </div>
                 <span style={{ color: 'var(--color-primary)' }}>{acik === d._id ? '▲' : '▼'}</span>

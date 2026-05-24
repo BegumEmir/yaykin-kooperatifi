@@ -75,7 +75,7 @@ export default function Home() {
       {/* ALINTI */}
       <section className="max-w-5xl mx-auto px-6 mb-12">
         <blockquote className="border-l-4 pl-5 py-1 text-gray-700 font-medium italic" style={{ borderColor: 'var(--color-primary)' }}>
-          İlçemizin en büyük köylerinden biri olan Yaykın, aynı zamanda ilçede en yüksek süt üretiminin gerçekleştirildiği yerleşim yeridir.
+          İlçemizin köklü ve sayılı büyük köylerinden biri olan Yaykın, yüksek süt üretimiyle ilçede öne çıkan yerleşim yerlerinden biridir.
         </blockquote>
       </section>
 

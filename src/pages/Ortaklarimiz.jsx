@@ -1,4 +1,13 @@
+import { useEffect, useState } from 'react'
+import { client } from '../sanityClient'
+
 export default function Ortaklarimiz() {
+  const [ayarlar, setAyarlar] = useState(null)
+
+  useEffect(() => {
+    client.fetch('*[_type == "ayarlar"][0]').then(setAyarlar)
+  }, [])
+
   return (
     <div className="max-w-4xl mx-auto px-6 py-16">
       <h1 className="text-3xl font-bold mb-8" style={{ color: 'var(--color-primary-dark)' }}>
@@ -8,11 +17,11 @@ export default function Ortaklarimiz() {
       {/* İstatistikler */}
       <div className="grid grid-cols-2 gap-6 mb-8">
         <div className="bg-white rounded-2xl shadow-sm p-8 text-center">
-          <p className="text-5xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>107</p>
+          <p className="text-5xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>{ayarlar?.ortakSayisi || '-'}</p>
           <p className="text-gray-500">Ortak</p>
         </div>
         <div className="bg-white rounded-2xl shadow-sm p-8 text-center">
-          <p className="text-5xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>50</p>
+          <p className="text-5xl font-bold mb-2" style={{ color: 'var(--color-primary)' }}>{ayarlar?.aktifOrtakSayisi || '-'}</p>
           <p className="text-gray-500">Aktif Ortak</p>
         </div>
       </div>
@@ -20,7 +29,7 @@ export default function Ortaklarimiz() {
       {/* Açıklama */}
       <div className="bg-white rounded-2xl shadow-sm p-8 mb-8">
         <p className="text-gray-600 leading-relaxed mb-4">
-          Kooperatifimiz, Yaykın Köyü'nde tarım ve hayvancılıkla uğraşan üreticilerin gönüllü katılımıyla faaliyet göstermektedir. Bugün kooperatifimizin bünyesinde <strong>179 ortağımız</strong> bulunmakta olup bunlardan <strong>78 tanesi aktif olarak</strong> faaliyetlerine devam etmektedir.
+          Kooperatifimiz, Yaykın Köyü'nde tarım ve hayvancılıkla uğraşan üreticilerin gönüllü katılımıyla faaliyet göstermektedir. Bugün kooperatifimizin bünyesinde <strong>{ayarlar?.ortakSayisi || '-'} ortağımız</strong> bulunmakta olup bunlardan <strong>{ayarlar?.aktifOrtakSayisi || '-'} tanesi aktif olarak</strong> faaliyetlerine devam etmektedir.
         </p>
         <p className="text-gray-600 leading-relaxed">
           Ortaklarımız, kooperatifimizin sunduğu hizmetlerden eşit ve adil şekilde yararlanmakta; üretim, tedarik ve hizmet süreçlerine katılım sağlayarak kooperatifimizin gelişimine katkıda bulunmaktadır. Üretici gücünü birleştiren bu yapı sayesinde hem bireysel hem de toplu fayda hedeflenmektedir.
@@ -45,7 +54,7 @@ export default function Ortaklarimiz() {
           href="https://koopbis.ticaret.gov.tr/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block px-5 py-2 rounded-xl border text-sm font-medium transition-colors hover:bg-green-50"
+          className="inline-block px-5 py-2 rounded-xl border text-sm font-medium transition-colors"
           style={{ borderColor: 'var(--color-primary)', color: 'var(--color-primary)' }}
         >
           KOOPBİS sistemine git →
@@ -90,9 +99,8 @@ export default function Ortaklarimiz() {
           Ortaklık İşlemleri ve Dilekçeler
         </h2>
         <p className="text-gray-600 text-sm mb-6">
-          Kooperatifimizde ortaklık başvurusu ve hisse devri işlemleri, aşağıda yer alan resmi dilekçeler aracılığıyla yapılmaktadır. Gerekli belgeler dilekçelerde belirtilmiş olup, başvurular kooperatif yönetimi tarafından değerlendirilmektedir.
+          Kooperatifimizde ortaklık başvurusu ve hisse devri işlemleri, aşağıda yer alan resmi dilekçeler aracılığıyla yapılmaktadır.
         </p>
-
         <div className="flex flex-col gap-3 mb-6">
           {[
             { ad: 'Ortaklık Başvuru Dilekçesi', url: '/dilekceler/uyelik-basvuru.pdf' },
@@ -125,7 +133,6 @@ export default function Ortaklarimiz() {
             </div>
           ))}
         </div>
-
         <p className="text-sm text-gray-500">
           Doldurulan dilekçeler ıslak imzalı olarak kooperatifimize teslim edilmelidir.
         </p>

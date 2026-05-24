@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { client } from '../sanityClient'
 
 export default function Footer() {
+  const [ayarlar, setAyarlar] = useState(null)
+
+  useEffect(() => {
+    client.fetch('*[_type == "ayarlar"][0]').then(setAyarlar)
+  }, [])
+
   return (
     <footer className="text-white mt-8" style={{ backgroundColor: 'var(--color-primary-dark)' }}>
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -8,12 +16,12 @@ export default function Footer() {
         {/* Sol — Kooperatif Bilgisi */}
         <div>
           <h3 className="font-bold text-lg mb-3">Yaykın Tarımsal Kalkınma Kooperatifi</h3>
-          <p className="text-green-200 text-sm mb-4">
+          <p className="text-red-200 text-sm mb-4">
             Doğal üretim, dayanışma ve köyümüzün kalkınması için hizmet veriyoruz.
           </p>
-          <p className="text-sm text-green-100">📍 Yaykın Köyü, Çan / Çanakkale</p>
-          <p className="text-sm text-green-100 mt-1">☎ 0 (554) 495 74 86</p>
-          <p className="text-sm text-green-100 mt-1">✉ yaykinkooperatifi@gmail.com</p>
+          <p className="text-sm text-red-100">📍 {ayarlar?.adres || 'Yaykın Köyü, Çan / Çanakkale'}</p>
+          <p className="text-sm text-red-100 mt-1">☎ {ayarlar?.telefon || '-'}</p>
+          <p className="text-sm text-red-100 mt-1">✉ {ayarlar?.eposta || '-'}</p>
         </div>
 
         {/* Orta — Hızlı Erişim */}
@@ -21,7 +29,7 @@ export default function Footer() {
           <h3 className="font-bold text-lg mb-3 border-l-4 pl-3" style={{ borderColor: 'var(--color-primary-light)' }}>
             Hızlı Erişim
           </h3>
-          <ul className="flex flex-col gap-2 text-sm text-green-200">
+          <ul className="flex flex-col gap-2 text-sm text-red-200">
             {[
               { to: '/', label: 'Ana Sayfa' },
               { to: '/hakkimizda', label: 'Hakkımızda' },
@@ -56,7 +64,7 @@ export default function Footer() {
       </div>
 
       {/* Alt bar */}
-      <div className="border-t border-green-800 text-center py-4 text-sm text-green-300">
+      <div className="border-t border-red-900 text-center py-4 text-sm text-red-300">
         © {new Date().getFullYear()} Yaykın Kooperatifi – Tüm Hakları Saklıdır.
       </div>
     </footer>

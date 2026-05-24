@@ -63,11 +63,11 @@ export default function Haberler() {
                     {h.baslik}
                   </h2>
                   <p className="text-xs text-gray-400 mb-2">
-                    {new Date(h.tarih).toLocaleDateString('tr-TR', {
+                    {h.tarih ? new Date(h.tarih).toLocaleDateString('tr-TR', {
                       day: 'numeric',
                       month: 'long',
                       year: 'numeric',
-                    })}
+                    }) : ''}
                   </p>
                   <p className="text-gray-600 text-sm line-clamp-3">{h.ozet}</p>
                 </div>

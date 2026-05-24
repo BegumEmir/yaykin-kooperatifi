@@ -129,7 +129,7 @@ export default function HaberDetay() {
 
         <div className="flex items-center justify-between mb-6">
           <p className="text-sm text-gray-400">
-            {new Date(haber.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}
+            {haber.tarih ? new Date(haber.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : ''}
           </p>
           <button
             onClick={baglantiKopyala}
