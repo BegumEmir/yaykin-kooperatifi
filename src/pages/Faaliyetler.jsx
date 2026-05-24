@@ -4,7 +4,7 @@ export default function Faaliyetler() {
       emoji: '🥛',
       baslik: 'Süt Toplama ve Soğutma Hizmeti',
       icerik: 'Kooperatifimiz, üyelerimizden düzenli olarak süt toplamakta ve modern süt tanklarında hijyenik koşullarda soğutarak muhafaza etmektedir. Soğutulan sütler, kalite standartlarına uygun şekilde satışa sunularak üyelerimizin emeğinin değer kazanması sağlanmaktadır.',
-      foto: '/galeri/süt-soğutma-deposu-il-tarım.jpeg',
+      foto: null,
     },
     {
       emoji: '🌾',
@@ -20,20 +20,26 @@ export default function Faaliyetler() {
     },
     {
       emoji: '⚙️',
-      baslik: 'Değirmen Hizmeti',
+      baslik: 'Değirmen ve Arpa Ezmesi Hizmeti',
       icerik: 'Kooperatif bünyesinde bulunan değirmende, üyelerimiz arpalarını getirerek arpa ezmesi haline dönüştürebilmektedir.',
-      foto: '/galeri/değirmen.jpeg',
+      foto: null,
     },
     {
       emoji: '🚜',
       baslik: 'Tarımsal Makine Hizmetleri',
       icerik: 'Kooperatifimizin sahip olduğu tarımsal makineler ile üyelerimizin tarımsal faaliyetlerinde ihtiyaç duydukları makine hizmetleri karşılanmaktadır.',
-      foto: '/galeri/kepçe.jpeg',
+      foto: null,
+    },
+    {
+      emoji: '🌿',
+      baslik: 'Balya Bağlama Hizmeti',
+      icerik: 'Kooperatifimizin balya makinesi ile yaz döneminde üyelerimizin balya bağlama ihtiyaçları karşılanmaktadır.',
+      foto: null,
     },
     {
       emoji: '🌾',
-      baslik: 'Balya Bağlama Hizmeti',
-      icerik: 'Kooperatifimizin balya makinesi ile yaz döneminde üyelerimizin balya bağlama ihtiyaçları karşılanmaktadır.',
+      baslik: 'Arpa Alımı',
+      icerik: 'Kooperatifimiz, üyelerimizin ihtiyacı doğrultusunda TEMA iş birliğiyle toplu arpa alımı gerçekleştirmektedir. Bu sayede üyelerimiz daha uygun fiyatlarla kaliteli arpa temin edebilmektedir.',
       foto: null,
     },
   ]
@@ -69,6 +75,34 @@ export default function Faaliyetler() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Seminerler ve Eğitimler */}
+      <div className="bg-white rounded-2xl shadow-sm p-8 mb-6">
+        <h2 className="text-xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
+          🎓 Seminerler, Eğitimler ve Geziler
+        </h2>
+        <p className="text-gray-600 leading-relaxed mb-4">
+          Kooperatifimiz, üyelerimizin mesleki gelişimine katkı sağlamak amacıyla düzenli olarak seminerler, eğitimler ve geziler organize etmektedir.
+        </p>
+        <ul className="flex flex-col gap-3 text-gray-600 text-sm">
+          <li className="flex gap-2">
+            <span>📍</span>
+            <span>Süt kalitesi, yağ ve protein konularında uzman konuşmacılarla bilgilendirme seminerleri</span>
+          </li>
+          <li className="flex gap-2">
+            <span>📍</span>
+            <span>Bakanlık uzmanları tarafından buzağı sağlığı ve hayvan bakımı eğitimleri</span>
+          </li>
+          <li className="flex gap-2">
+            <span>📍</span>
+            <span>Kadın ve genç girişimcilere yönelik girişimcilik seminerleri</span>
+          </li>
+          <li className="flex gap-2">
+            <span>📍</span>
+            <span>Üreticilerimizin mesleki deneyim kazanmasına yönelik yurt içi geziler</span>
+          </li>
+        </ul>
       </div>
 
       <div className="bg-white rounded-2xl shadow-sm p-8">

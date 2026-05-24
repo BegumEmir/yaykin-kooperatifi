@@ -121,7 +121,7 @@ export default function Home() {
                 >
                   <div>
                     <p className="font-semibold" style={{ color: 'var(--color-primary-dark)' }}>{d.baslik}</p>
-                    <p className="text-sm text-gray-400">{new Date(d.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                    <p className="text-sm text-gray-400">{d.tarih ? new Date(d.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : ''}</p>
                   </div>
                   <span style={{ color: 'var(--color-primary)' }}>{acikDuyuru === d._id ? '▲' : '▼'}</span>
                 </button>
@@ -158,7 +158,7 @@ export default function Home() {
             haberler.map((h) => (
               <div key={h._id} className="bg-white rounded-xl shadow-sm p-6 border-l-4" style={{ borderColor: 'var(--color-primary)' }}>
                 <h3 className="font-semibold text-lg mb-1" style={{ color: 'var(--color-primary-dark)' }}>{h.baslik}</h3>
-                <p className="text-sm text-gray-400 mb-2">{new Date(h.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                <p className="text-sm text-gray-400 mb-2">{h.tarih ? new Date(h.tarih).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : ''}</p>
                 <p className="text-gray-600 text-sm mb-3">{h.ozet}</p>
                 <a href={`/haberler/${h.slug?.current}`} className="text-sm font-medium underline" style={{ color: 'var(--color-primary)' }}>
                   Haberi Görüntüle →
