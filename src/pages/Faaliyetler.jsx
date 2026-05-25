@@ -4,7 +4,7 @@ export default function Faaliyetler() {
       emoji: '🥛',
       baslik: 'Süt Toplama ve Soğutma Hizmeti',
       icerik: 'Kooperatifimiz, üyelerimizden düzenli olarak süt toplamakta ve modern süt tanklarında hijyenik koşullarda soğutarak muhafaza etmektedir. Soğutulan sütler, kalite standartlarına uygun şekilde satışa sunularak üyelerimizin emeğinin değer kazanması sağlanmaktadır.',
-      foto: null,
+      foto: "süt-toblama-soğutma.jpeg",
     },
     {
       emoji: '🌾',

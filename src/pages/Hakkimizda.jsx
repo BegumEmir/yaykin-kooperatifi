@@ -20,7 +20,7 @@ export default function Hakkimizda() {
           <p>Kooperatifimiz, yerel üretimi destekleyen, güvenilir ve şeffaf bir yönetim anlayışını benimsemektedir. Ortaklarımızın emeğinin değer bulması, üretimin sürdürülebilir hale gelmesi ve kırsal kalkınmaya katkı sağlanması temel önceliklerimiz arasındadır. Bugün olduğu gibi gelecekte de, üyelerimizle birlikte büyüyen, gelişen ve bölge ekonomisine katkı sunan bir kooperatif olma hedefiyle çalışmalarımızı sürdürmekteyiz.</p>
         </div>
         <div className="flex-shrink-0">
-          <img src="logo.png" alt="Ekibimiz" className="w-72 rounded-2xl object-cover" />
+          <img src="süt-toplama-merkezi.jpeg" alt="Ekibimiz" className="w-72 rounded-2xl object-cover" />
         </div>
       </div>
 
