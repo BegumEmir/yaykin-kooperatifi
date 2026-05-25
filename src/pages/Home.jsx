@@ -32,7 +32,7 @@ export default function Home() {
             </h1>
             <p className="text-gray-600 mb-2">
               S.S. Yaykın Köyü Tarımsal Kalkınma Kooperatifi, Çanakkale ili Çan ilçesine bağlı
-              Yaykın Köyü'nde faaliyet gösteren bir tarım kooperatifidir.
+              Yaykın Köyü'nde faaliyet gösteren köklü bir tarım kooperatifidir.
             </p>
             <p className="text-gray-600 mb-6">
               Köyümüzün doğal üretim gücünü bir araya getirerek dayanışmayı ve tarımsal kalkınmayı esas alıyoruz.
@@ -75,7 +75,7 @@ export default function Home() {
       {/* ALINTI */}
       <section className="max-w-5xl mx-auto px-6 mb-12">
         <blockquote className="border-l-4 pl-5 py-1 text-gray-700 font-medium italic" style={{ borderColor: 'var(--color-primary)' }}>
-          İlçemizin köklü ve sayılı büyük köylerinden biri olan Yaykın, yüksek süt üretimiyle ilçede öne çıkan yerleşim yerlerinden biridir.
+          İlçemizin sayılı büyük köylerinden biri olan Yaykın, yüksek süt üretimiyle ilçede öne çıkan yerleşim yerlerinden biridir.
         </blockquote>
       </section>
 
