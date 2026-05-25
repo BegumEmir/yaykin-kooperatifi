@@ -17,12 +17,12 @@ export default function Navbar() {
 
         {/* Desktop Menü */}
         <div className="hidden md:flex items-center gap-6 text-sm text-white">
-          <Link to="/" className="hover:text-green-300 transition-colors">Ana Sayfa</Link>
+          <Link to="/" className="hover:text-gray-200">Ana Sayfa</Link>
 
           {/* Kurumsal Dropdown */}
           <div className="relative">
             <button
-              className="flex items-center gap-1 hover:text-green-300 transition-colors"
+              className="flex items-center gap-1 hover:text-gray-200 transition-colors"
               onClick={() => { setKurumsalAcik(!kurumusalAcik); setMedyaAcik(false) }}
             >
               Kurumsal <span className="text-xs">▼</span>
@@ -39,7 +39,7 @@ export default function Navbar() {
                   <Link
                     key={item.to}
                     to={item.to}
-                    className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-800 transition-colors"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors"
                     onClick={() => setKurumsalAcik(false)}
                   >
                     {item.label}
@@ -49,12 +49,12 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link to="/faaliyetler" className="hover:text-green-300 transition-colors">Faaliyetler</Link>
+          <Link to="/faaliyetler" className="hover:text-gray-200 transition-colors">Faaliyetler</Link>
 
           {/* Medya Odası Dropdown */}
           <div className="relative">
             <button
-              className="flex items-center gap-1 hover:text-green-300 transition-colors"
+              className="flex items-center gap-1 hover:text-gray-200 transition-colors"
               onClick={() => { setMedyaAcik(!medyaAcik); setKurumsalAcik(false) }}
             >
               Medya Odası <span className="text-xs">▼</span>
@@ -69,7 +69,7 @@ export default function Navbar() {
                   <Link
                     key={item.to}
                     to={item.to}
-                    className="block px-4 py-2 text-gray-700 hover:bg-green-50 hover:text-green-800 transition-colors"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors"
                     onClick={() => setMedyaAcik(false)}
                   >
                     {item.label}
@@ -79,7 +79,7 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link to="/iletisim" className="hover:text-green-300 transition-colors">İletişim</Link>
+          <Link to="/iletisim" className="hover:text-gray-200 transition-colors">İletişim</Link>
         </div>
 
         {/* Mobil Hamburger */}
