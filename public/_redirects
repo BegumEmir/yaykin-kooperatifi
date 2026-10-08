@@ -1,1 +1,3 @@
-/* /index.html 200
+/studio    https://yaykin.sanity.studio/ 302
+/studio/*  https://yaykin.sanity.studio/:splat 302
+/*         /index.html 200
